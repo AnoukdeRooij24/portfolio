@@ -4,6 +4,58 @@ body {
     --text-color: hsl(0, 0%, 0%); 
 }
 
-h1, p, a{
-    font-family: "glory";
+h1 {
+    font-family: "LondrinaSolid";
+    letter-spacing: 2px;
+    font-size: clamp(2rem, 5vw, 4rem);
+    color: var(--text-color);
 }
+
+p {
+    font-family: "glory";
+    font-weight: 400;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    color: var(--text-color);
+}
+
+a {
+    font-family: "glory";
+    font-weight: 700;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    color: var(--accent-color);
+    text-decoration: none;
+    position: relative;
+    display: block;
+    transition: 0.5s;
+
+        &::after {
+        position: absolute;
+        content: "";
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        border-radius: 3px;
+        background: var(--accent-color);
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s;
+        }
+
+        &:hover {
+        color: var(--accent-color);
+        }
+
+        &:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+        }
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+
+}
+
