@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 body {
     --primary-color: hsl(0, 0%, 100%);
     --accent-color: hsl(139, 11%, 50%);
@@ -9,13 +15,27 @@ h1 {
     letter-spacing: 2px;
     font-size: clamp(2rem, 5vw, 4rem);
     color: var(--text-color);
+    margin: .5em;
 }
+
+h2 {
+    font-family: "LondrinaSolid";
+    letter-spacing: 1px;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    color: var(--text-color);
+    margin: .5em;
+}
+
 
 p {
     font-family: "glory";
     font-weight: 400;
     font-size: clamp(1rem, 2.5vw, 1.5rem);
     color: var(--text-color);
+    max-width: 60ch;
+    margin: .5em;
+    padding: .25em;
+
 }
 
 

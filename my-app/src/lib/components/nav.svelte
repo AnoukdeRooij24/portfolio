@@ -6,6 +6,16 @@
 </nav>
 
 <style>
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    flex-wrap: wrap;
+    margin: .5em;
+    padding: .5em;
+}
+
     a {
     font-family: "glory";
     font-weight: 700;
@@ -39,12 +49,4 @@
         transform-origin: left;
         }
 }
-
-nav {
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
-
-}
-
 </style>
